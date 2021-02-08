@@ -1,0 +1,8 @@
+# HTML
+*.html     text eol=crlf
+# Graphics
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+# data files
+*.dat      binary
