@@ -7,7 +7,8 @@ import java.util.zip.InflaterInputStream;
 
 public class kodutoo{
 
-
+    //https://www.geeksforgeeks.org/compressing-and-decompressing-files-in-java/
+    //palju stackoverflowd
     public static String compressFile(String path){
 
         ArrayList<String> fileExt = new ArrayList<String>(Arrays.asList(path.split("[.]")));
@@ -64,7 +65,6 @@ public class kodutoo{
     public static void main(String[] arg){
         String option = arg[0];
         String path = arg[1];
-        //System.out.println(decompressFile("Comptest"));
         if(option.equals("c")){
             System.out.println(compressFile(path));
         }
