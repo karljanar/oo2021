@@ -6,9 +6,8 @@ import java.util.zip.DeflaterOutputStream;
 import java.util.zip.InflaterInputStream;
 
 public class kodutoo{
-
+    //Kasutatud allikad: dokumentatsioon ja :
     //https://www.geeksforgeeks.org/compressing-and-decompressing-files-in-java/
-    //palju stackoverflowd
     public static String compressFile(String path){
 
         ArrayList<String> fileExt = new ArrayList<String>(Arrays.asList(path.split("[.]")));
