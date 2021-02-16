@@ -12,7 +12,7 @@ public class kodutoo2 {
         }
     }
 
-    public double totalResitance(String type, int voltage){
+    public double totalResitance(String type){
         double tR = 0;
         if(type.equals("serial")) {
             for (double i : resistors.values()) {
@@ -29,7 +29,7 @@ public class kodutoo2 {
     }
 
     public double current(String type, int voltage){
-        double tResistance = totalResitance(type, voltage);
+        double tResistance = totalResitance(type);
         double elecCurrent = voltage / tResistance;
         elecCurrent = (double)Math.round(elecCurrent * 100000d) / 100000d;
         return elecCurrent;

@@ -6,9 +6,9 @@ public class kodutooproov {
         serialConnection.addResistors("r3", 330.0);
 
         System.out.println(serialConnection.askResistors());
-        System.out.println(serialConnection.totalResitance("serial", 5) + "Ω");
+        System.out.println(serialConnection.totalResitance("serial") + "Ω");
         System.out.println("Elektriahela voolutugevuseks on: " + serialConnection.current("serial", 5) + "A");
-        System.out.println("Elektriahela voolutugevuseks on: " + serialConnection.power("serial", 5) + "W");
+        System.out.println("Elektriahela voimsuseks on: " + serialConnection.power("serial", 5) + "W");
 
 
 
@@ -18,9 +18,9 @@ public class kodutooproov {
         parallelConnection.addResistors("r3", 33.0);
 
         System.out.println(parallelConnection.askResistors());
-        System.out.println(parallelConnection.totalResitance("parallel", 5) + "Ω");
+        System.out.println(parallelConnection.totalResitance("parallel") + "Ω");
         System.out.println("Elektriahela voolutugevuseks on: " + parallelConnection.current("parallel", 5) + "A");
-        System.out.println("Elektriahela voolutugevuseks on: " + parallelConnection.power("parallel", 5) + "W");
+        System.out.println("Elektriahela  voimsuseks on: " + parallelConnection.power("parallel", 5) + "W");
 
 
     }
