@@ -1,9 +1,9 @@
-public class kodutooproov {
+public class kodutoopr{
     public static void main(String[] arg){
         kodutoo2 serialConnection = new kodutoo2();
-        serialConnection.addResistors("r1", 330.0);
-        serialConnection.addResistors("r2", 330.0);
-        serialConnection.addResistors("r3", 330.0);
+        serialConnection.addResistors("r1", 30.0);
+        //serialConnection.addResistors("r2", 330.0);
+        //serialConnection.addResistors("r3", 330.0);
 
         System.out.println(serialConnection.askResistors());
         System.out.println(serialConnection.totalResitance("serial") + "Ω");
