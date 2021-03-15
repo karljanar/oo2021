@@ -11,7 +11,7 @@ public class parallel implements vooluahel {
     public double totalResistance() {
         double tR = 0;
         for (int i = 0; i<resistors.size(); i++) {
-            tR += Math.pow(i, -1);
+            tR += Math.pow(resistors.get(i), -1);
         }
         tR = (double) Math.round(Math.pow(tR, -1) * 100d) / 100d;
         return tR;

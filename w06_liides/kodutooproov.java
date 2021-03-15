@@ -4,7 +4,7 @@ public class kodutooproov {
         for (int i =0; i<arg.length; i++){
             jada.addResistors(Double.parseDouble(arg[i]));
         }
-        System.out.println("Vooluahela kogutakistus on " + jada.totalResistance());
+        System.out.println("Vooluahela kogutakistus on " + jada.totalResistance() + "Ω");
 
     }
 
