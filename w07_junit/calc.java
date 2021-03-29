@@ -2,8 +2,9 @@
 public class calc implements calkInterface{
 
     String vnupp = "";
-    double mnupp;
-    String katse = "";
+    double enumb;
+    double tnumb;
+    int sumbol;
     public static boolean isNumeric(String strNum) {
         if (strNum == null) {
             return false;
@@ -20,13 +21,42 @@ public class calc implements calkInterface{
     public void vajutus(String nupp) {
         if(nupp.equals("C")){ vnupp = "0"; }
         else if(vnupp.equals("0")){ vnupp = nupp;
-        katse += nupp;}
+       }
         else if(isNumeric(nupp)){ vnupp += nupp;
-        katse += nupp;}
-        else if(nupp.equals("+")){ katse += nupp;
         }
-        else if(nupp.equals("=")){ katse += nupp;
-        vnupp = }
+        else if(nupp.equals("+")){
+        enumb = Double.parseDouble(vnupp);
+        vnupp = "";
+        sumbol = 1;
+        }
+        else if(nupp.equals("-")){
+            enumb = Double.parseDouble(vnupp);
+            vnupp = "";
+            sumbol = 2;
+        }
+        else if(nupp.equals("*")){
+            enumb = Double.parseDouble(vnupp);
+            vnupp = "";
+            sumbol = 3;
+        }
+        else if(nupp.equals("/")){
+            enumb = Double.parseDouble(vnupp);
+            vnupp = "";
+            sumbol = 4;
+        }
+        else if(nupp.equals("=")){
+            tnumb = Double.parseDouble(vnupp);
+            if(sumbol == 1){
+                vnupp = String.valueOf(enumb + tnumb);
+            } else if(sumbol == 2){
+                vnupp = String.valueOf(enumb - tnumb);
+            } else if(sumbol == 3){
+                vnupp = String.valueOf(enumb * tnumb);
+            }else if(sumbol == 4){
+                vnupp = String.valueOf(enumb / tnumb);
+            }
+
+        }
 
     }
 

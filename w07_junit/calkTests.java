@@ -45,6 +45,42 @@ public class calkTests {
         k.vajutus("5");
         assertEquals("5", k.kuvatav());
         k.vajutus("=");
-        assertEquals("8", k.kuvatav());
+        assertEquals("8.0", k.kuvatav());
+    }
+
+    @Test
+    public void arvutus2(){
+
+        k.vajutus("3");
+        assertEquals("3", k.kuvatav());
+        k.vajutus("-");
+        k.vajutus("1");
+        assertEquals("1", k.kuvatav());
+        k.vajutus("=");
+        assertEquals("2.0", k.kuvatav());
+    }
+
+    @Test
+    public void arvutus3(){
+
+        k.vajutus("3");
+        assertEquals("3", k.kuvatav());
+        k.vajutus("*");
+        k.vajutus("5");
+        assertEquals("5", k.kuvatav());
+        k.vajutus("=");
+        assertEquals("15.0", k.kuvatav());
+    }
+
+    @Test
+    public void arvutus4(){
+
+        k.vajutus("3");
+        assertEquals("3", k.kuvatav());
+        k.vajutus("/");
+        k.vajutus("3");
+        assertEquals("3", k.kuvatav());
+        k.vajutus("=");
+        assertEquals("1.0", k.kuvatav());
     }
 }
