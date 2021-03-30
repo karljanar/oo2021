@@ -44,6 +44,11 @@ public class calc implements calkInterface{
             vnupp = "";
             sumbol = 4;
         }
+        else if(nupp.equals("**")){
+            enumb = Double.parseDouble(vnupp);
+            vnupp = "";
+            sumbol = 5;
+        }
         else if(nupp.equals("=")){
             tnumb = Double.parseDouble(vnupp);
             if(sumbol == 1){
@@ -54,6 +59,8 @@ public class calc implements calkInterface{
                 vnupp = String.valueOf(enumb * tnumb);
             }else if(sumbol == 4){
                 vnupp = String.valueOf(enumb / tnumb);
+            }else if(sumbol == 5){
+                vnupp = String.valueOf(Math.pow(enumb, tnumb));
             }
 
         }

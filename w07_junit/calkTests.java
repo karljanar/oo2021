@@ -83,4 +83,18 @@ public class calkTests {
         k.vajutus("=");
         assertEquals("1.0", k.kuvatav());
     }
+
+    @Test
+    public void arvutus5(){
+
+        k.vajutus("5");
+        assertEquals("5", k.kuvatav());
+        k.vajutus("**");
+        k.vajutus("2");
+        assertEquals("2", k.kuvatav());
+        k.vajutus("=");
+        assertEquals("25.0", k.kuvatav());
+    }
+
+
 }
