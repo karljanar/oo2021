@@ -12,7 +12,7 @@ public class proov3 {
         sisend b = new sisend();
         b.lisa(l2);
         a.seisund(true);
-        b.seisund(false);
+        b.seisund(true);
         System.out.println(r1.kysiTakistus());
     }
 }
