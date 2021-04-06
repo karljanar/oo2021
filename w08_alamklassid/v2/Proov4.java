@@ -2,7 +2,7 @@ package v2;
 
 public class Proov4 {
     public static void main(String[] arg){
-        /*
+
         takisti t1 = new takisti(300, 5);
         takisti t2 = new takisti(500, 5);
 
@@ -12,8 +12,8 @@ public class Proov4 {
 
         System.out.println(j1.kysiTakistus());
         System.out.println(j1.kysiMaxPinge());
-        System.out.println(j1.kysiMaxVoimsus());*/
-
+        System.out.println(j1.kysiMaxVoimsus());
+        System.out.println("--------------------------");
         takisti t3 = new takisti(300, 5);
         takisti t4 = new takisti(500, 5);
         takisti t5 = new takisti(500, 5);
@@ -24,6 +24,8 @@ public class Proov4 {
         rj1.lisa("s2", t4);
         rj1.lisa("p1", t5);
         rj1.lisa("p2", t6);
+        rj1.lisa("s3", t4);
+
 
         System.out.println(rj1.kysiTakistus());
         System.out.println(rj1.kysiMaxPinge());

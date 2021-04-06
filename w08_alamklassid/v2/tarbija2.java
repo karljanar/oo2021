@@ -25,9 +25,5 @@ public abstract class tarbija2 {
         return kysiMaxVoimsus()>=pinge*vool;
     }
 
-
-
-
-
 }
 

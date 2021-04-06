@@ -21,7 +21,7 @@ public class jada extends tarbija2{
         for(tarbija2 t: hoidla){
             double mp = t.kysiMaxPinge();
             if(mp < maxPinge){
-                maxPinge = mp;
+                maxPinge += mp;
             }
         }
         return  maxPinge;
