@@ -1,16 +1,15 @@
 public class Hammasratas {
     double poorded = 0;
+    int hrattahambad;
 
     public double liiguEdasi(int hambad){
-        if(hambad < 10){
-            hambad = 10;
-        }
-        poorded += hambad / 100D;
+        hrattahambad = hambad;
+        poorded += 1D/hambad;
         poorded = Math.round(poorded *100) /100D;
         return poorded;
     }
 
-    /*public boolean kysiPooret(){
-        return poorded % 2 == 0 || poorded % 2 == 1;
-    }*/
+    public int kysiHambaid(){
+        return hrattahambad;
+    }
 }
