@@ -5,10 +5,12 @@ public class Hammasratas {
     public double liiguEdasi(int hambad){
         hrattahambad = hambad;
         poorded += 1D/hambad;
-        poorded = Math.round(poorded *100) /100D;
+       // poorded = Math.round(poorded *100) /100D;
         return poorded;
     }
 
+
+    //ei toota
     public int kysiHambaid(){
         return hrattahambad;
     }
