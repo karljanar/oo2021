@@ -1,4 +1,4 @@
-public class kodutoopr{
+class kodutoopr{
     public static void main(String[] arg){
         kodutoo2 serialConnection = new kodutoo2();
         serialConnection.addResistors("r1", 30.0);

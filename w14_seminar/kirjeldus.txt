@@ -1,1 +1,18 @@
 Märkmed seminari teemadel
+
+* Objektorienteerituse head ning tülikad küljed
+taaskasutus, klasse saab kasutada ka mujal rakendustes(koik vajalik on ette antud)
+saab mitu inimest korraga progeda,
+kui mitu asja peavad sama asja tegema, saab lihtsalt ühe klassi luua ja need mitu asja saavad alamklassid siis.
+kerge muuta koodi.
+
+ - ei ole efektiivne palju võimsust ja suured suurused,
+madal kiirus,
+vajab palju õppimist
+
+* Klassi kasutamine staatiliste funktsioonide kogumikuna (moodulina)
+Saaks kasutada koodi mitmes kohas.
+Et ei oleks uleliigsed kooodi ulekirjutamist. Kood oleks vaiksem ja sellega efektiivsem.
+Soovitusi:
+ faili pikkus 1000rida
+funktsiooni pikkus ekraani peale voiks ara mahtuda
